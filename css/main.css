@@ -1,0 +1,55 @@
+
+.navbg{
+	background: url("../bg2.jpg");
+}
+
+h1{
+    color: #fff;
+    text-align: center;
+	font-family: 'Rancho', Serif;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+img{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+}
+
+.iconimage{
+	width: 100px;
+	height: 100px;
+}
+
+.form-control{
+    width: 50% !important;
+}
+
+#form{
+	margin-top: 100px;
+}
+
+footer {
+  	position: absolute;
+  	bottom: 0;
+  	width: 100%;
+  	background: url("../bg2.jpg");
+  	text-align: center;
+	font-family: 'Alegreya', serif;
+	font-size: 30px;
+	color: #fff;
+	padding: 10px;
+}
+
+table {
+    width: 90%;
+    height: 90%;
+}
+
+th{
+	text-align: center;
+	background: url("../bg2.jpg");
+	color: #fff;
+	height: 40px;
+}
