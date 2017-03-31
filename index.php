@@ -31,26 +31,26 @@
                 <div class="row">
                 <br>
                 <br>
-                <form action="insert.php" method="post">
-                    <div class="form-group col-lg-12">
-                        <label for="inputName">Name</label>
-                        <input type="text" name="name" class="form-control" placeholder="Name">
-                    </div>
-                    <div class="form-group col-lg-12">
-                        <label for="inputEmail">Email</label>
-                        <input type="email"  name="email" class="form-control" placeholder="Email">
-                    </div>
-                    <div class="form-group col-lg-12">
-                        <label for="inputPassword">Phone number</label>
-                        <input type="text" name="contact" class="form-control " placeholder="9999999999">
-                    </div>
-                    <div class="form-group col-lg-12">
-                        <label>UPLOAD PROFILE PICTURE:</label>
-                        <input type="file" name="photo" id="imgInp" onchange="loadFile(event);">
-                        <br>
-                        <img src="images.png" class="preview iconimage" id="preview" alt="No Image">
-                    </div>
-                     <button type="submit" class="btn btn-danger">SUBMIT</button>
+                    <form action="insertfinal.php" enctype="multipart/form-data" method="post">
+                        <div class="form-group col-lg-12">
+                            <label for="inputName">Name</label>
+                            <input type="text" name="name" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <label for="inputEmail">Email</label>
+                            <input type="email"  name="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <label for="inputPassword">Phone number</label>
+                            <input type="text" name="contact" class="form-control " placeholder="9999999999">
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <label>UPLOAD PROFILE PICTURE:</label>
+                            <input name="uploadedimage" type="file" id="imgInp" onchange="loadFile(event);">
+                            <br>
+                            <img src="images.png" class="preview iconimage" id="preview" alt="No Image">
+                        </div>
+                        <button class="btn btn-warning" name="Upload Now" type="submit" value="Submit"> SUBMIT </button>
                     
                     </form>
                 </div>
@@ -58,7 +58,7 @@
         </div>
     </center>
 
-    <footer>
+    <footer class="navbar navbg navbar-fixed-bottom animated-header">
         <?php include('f.php'); ?>
     </footer>
 
